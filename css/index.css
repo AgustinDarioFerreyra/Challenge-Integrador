@@ -85,3 +85,8 @@ p {
     max-width: 1200px;
     margin: 0 auto;
 }
+
+/* HEADER */
+header {
+    background-color: var(--dark-bg-solid);
+}

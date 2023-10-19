@@ -1,0 +1,106 @@
+@import url("./index.css");
+
+::placeholder {
+  opacity: 0.5;
+}
+
+.register__title {
+  font-size: var(--font-xlarge);
+  font-family: var(--alternative-font);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: var(--spacing-28);
+  font-weight: 600;
+}
+
+.register__text {
+  font-family: var(--font-display);
+  font-size: var(--font-large);
+  text-align: center;
+}
+
+.register__form {
+  display: grid;
+  max-width: 380px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-24);
+  padding-top: 30px;
+}
+
+.register__label {
+  font-family: var(--alternative-font);
+  color: var(--dark-solid);
+  font-weight: 500;
+  font-size: var(--font-medium);
+}
+
+.register__input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid var(--primary-solid);
+  outline: none;
+  width: 150px;
+}
+
+.register__input--dot {
+  letter-spacing: 0.25em;
+  font-size: medium;
+}
+
+.button__register {
+  background-color: var(--primary-solid);
+  color: var(--light-font-solid);
+  font-size: var(--font-xsmall);
+  border: none;
+  padding: var(--spacing-8) var(--spacing-20);
+  width: fit-content;
+  transition: background 0.1s ease-in-out;
+}
+
+.button__register:hover {
+  background-color: var(--dark-900);
+  color: var(--light-font-solid);
+}
+
+.terminos__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: var(--spacing-36);
+  width: 450px;
+}
+
+.terminos__check--label {
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.terminos__label {
+  margin-left: 10px;
+}
+
+.terminos__link {
+  color: #1d84b5;
+  font-style: var(--base-font);
+}
+
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+}
+
+.footer__register {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}

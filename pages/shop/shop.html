@@ -49,6 +49,33 @@
                     </li>
         </ul>
       </nav>
+
+      <nav class="navbar--responsive container">
+        <picture class="navbar__logo--responsive">
+                    <a href="../../index.html">
+                        <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca FunkoShop">
+                    </a>
+                </picture>
+        <div class="navbar__item with-submenu--responsive">
+                        <a class="navbar__link--responsive with-icon--responsive" href="./pages/shop/shop.html"><iconify-icon icon="ion:menu"></iconify-icon>Menú</a>
+                        <ul class="submenu--responsive">
+                            <li class="submenu__item--responsive">
+                                <a href="" class="submenu__link--responsive">SHOP</a>
+                                <li class="submenu__link__shop--responsive"><a href="">- Remeras</a></li>
+                                <li class="submenu__link__shop--responsive"><a href="">- Funkos</a></li>
+                                <li class="submenu__link__shop--responsive"><a href="">- Llaveros</a></li>
+                            </li>
+                            <li class="submenu__item--responsive">
+                                <a href="" class="submenu__link--responsive">CONTACTO</a>
+                            </li>
+                            <li class="submenu__item--responsive">
+                                <a href="" class="submenu__link--responsive">LOGIN</a>
+                            </li>
+                            <li class="submenu__item--responsive">
+                                <a href="" class="submenu__link--responsive">CARRITO</a>
+                            </li>
+                        </ul>
+                      </div></nav>
     </header>
     <!-- FIN HEADER -->
 
@@ -57,7 +84,8 @@
     
         <aside class="filters__aside">
 
-  <div class="filter__search">
+  <div class="filters__box">
+    <div class="filter__search">
     <label class="filters__title" for="search">BUSCAR</label>
     <form class="search__aside--form" action="index.js" method="GET">
         <input
@@ -92,7 +120,7 @@
 
         
       
-      <label class="price__label--max" for="price__max">- MAX</label>
+      <label class="price__label--max" for="price__max">- &nbsp MAX</label>
         <input
           class="price__input--max"
           type="price__max"
@@ -100,6 +128,32 @@
           id="price__max"
           placeholder="0"
         />
+      </div>
+      </div>
+
+      <div class="filter__price--responsive">
+        <span class="filters__title--responsive">PRECIO</span>
+
+        <div><label class="price__label--min--responsive" for="price__min--responsive">MIN</label>
+        <input
+          class="price__input--min--responsive"
+          type="price__min--responsive"
+          name="price__min--responsive"
+          id="price__min--responsive"
+          placeholder="0"
+        />
+
+        
+      
+        <label class="price__label--max--responsive" for="price__max--responsive">MAX</label>
+        <input
+          class="price__input--max--responsive"
+          type="price__max--responsive"
+          name="price__max--responsive"
+          id="price__max--responsive"
+          placeholder="0"
+        />
+      </div>
       </div>
     </div>
 
@@ -116,7 +170,7 @@
       <label for="special__edition">EDICIÓN ESPECIAL</label></div>
       <div><input type="checkbox" name="filter" id="favs" value="favs"><label for="favs">FAVORITOS</label></div>
     
-    </div>
+    </div></div>
 
     </aside>
 
@@ -166,7 +220,7 @@
                   />
                 </picture>
                 <div class="card-item__content">
-                  <p class="card-item_licence">POKEMON INDIGO</p>
+                  <p class="card-item__licence">POKEMON INDIGO</p>
                   <h4 class="card-item__name">PIDGEOTTO</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
@@ -192,7 +246,7 @@
                 </picture>
                 <div class="card-item__content">
                   <p class="card-item__licence">HARRY POTTER</p>
-                  <h4 class="card-item__name">LUNA LOVEGOOD</h4>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
@@ -240,7 +294,7 @@
                   />
                 </picture>
                 <div class="card-item__content">
-                  <p class="card-item_licence">POKEMON INDIGO</p>
+                  <p class="card-item__licence">POKEMON INDIGO</p>
                   <h4 class="card-item__name">PIDGEOTTO</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
@@ -266,7 +320,7 @@
                 </picture>
                 <div class="card-item__content">
                   <p class="card-item__licence">HARRY POTTER</p>
-                  <h4 class="card-item__name">LUNA LOVEGOOD</h4>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
@@ -313,7 +367,7 @@
                   />
                 </picture>
                 <div class="card-item__content">
-                  <p class="card-item_licence">POKEMON INDIGO</p>
+                  <p class="card-item__licence">POKEMON INDIGO</p>
                   <h4 class="card-item__name">PIDGEOTTO</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
@@ -339,7 +393,7 @@
                 </picture>
                 <div class="card-item__content">
                   <p class="card-item__licence">HARRY POTTER</p>
-                  <h4 class="card-item__name">LUNA LOVEGOOD</h4>
+                  <h4 class="card-item__name">LUNA LOVEGOOD LION MASK</h4>
                   <p class="card-item__price">$1799,99.</p>
                   <p class="card-item__promo">3 CUOTAS SIN INTERÉS</p>
                 </div>
@@ -348,7 +402,7 @@
           </li></ul>
         
         
-        <div class="pagination">
+            <div class="pagination">
                 <a class="pagination__link" href="#" ><</a>
                 <a class="pagination__link pagination__link--selected" href="#" >1</a>
                 <a class="pagination__link" href="#" >2</a>
@@ -375,26 +429,48 @@
 
     <footer class="footer">
       <nav class="navbar container">
-        <ul class="navbar__item">
-          <li class="navbar__item">
-            <a class="navbar__link" href="./shop.html">SHOP</a>
+                    <ul class="navbar__items">
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="./shop.html">SHOP</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="./pages/admin/register.html">REGISTRATE</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="./pages/admin/login.html">LOGIN</a>
+                        </li>
+                        <li class="navbar__item">
+                            <a class="navbar__link" href="./pages/admin/login.html">CONTACTO</a>
+                        </li>
+                    </ul>
+                    <picture>
+                        <img src="../../img/branding/isotype.svg" alt="Isologotipo de la Marca FunkoShop">
+                    </picture>
+                </nav>
+                <p class="footer__copyright">All rights reserved 2023 - Funkoshop &copy;</p>
+
+
+      <nav class="navbar--responsive container">
+        <ul class="navbar__item--responsive">
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="./shop.html">SHOP</a>
           </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="../admin/register.html">REGISTRARSE</a>
           </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="../admin/login.html">LOGIN</a>
           </li>
-          <li class="navbar__item">
-            <a class="navbar__link" href="./contact.html">CONTACTO</a>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="./contact.html">CONTACTO</a>
           </li>
         </ul>
         <picture>
-          <img src="../../img/branding/isotype.svg" alt="Isotipo de la marca FunkoPop" />
+          <img class="picture__footer--responsive" src="../../img/branding/isotype.svg" alt="Isotipo de la marca FunkoPop" />
         </picture>
       </nav>
 
-      <p class="footer__copyright">All rights reserved 2023 - FunkoShop &copy;</p>
+      <p class="footer__copyright--responsive">All rights reserved 2023 - FunkoShop &copy;</p>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 

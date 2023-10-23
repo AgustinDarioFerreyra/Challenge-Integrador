@@ -11,7 +11,7 @@
   margin: var(--spacing-68) auto;
 }
 
-.filters__aside {
+.filters__box {
   display: flex;
   flex-direction: column;
   gap: var(--spacing-28);
@@ -19,7 +19,7 @@
 }
 
 .filters__title {
-  font-size: var(--font-medium);
+  font-size: var(--font-large);
   font-weight: 500;
 }
 
@@ -40,6 +40,7 @@
 
 .filter__price div {
   margin-top: var(--spacing-12);
+  margin-bottom: var(--spacing-16);
   display: flex;
   align-items: baseline;
   justify-content: space-between;
@@ -51,7 +52,8 @@
 }
 
 .filter__price input {
-  width: 70px;
+  width: 55px;
+  height: 25px;
   text-align: center;
   border-radius: 6px;
   font-size: var(--font-medium);
@@ -66,7 +68,7 @@
 }
 
 .filter__checkbox span {
-  margin-bottom: var(--spacing-12);
+  margin-top: var(--spacing-12);
 }
 
 .filter__checkbox div {
@@ -74,7 +76,8 @@
   align-items: center;
   gap: var(--spacing-8);
   font-weight: 500;
-  font-size: var(--font-medium);
+  font-size: var(--font-small);
+  margin-left: 1em;
 }
 
 .filter__checkbox div input {
@@ -130,4 +133,200 @@
 .pagination .pagination__link--selected {
   border-color: var(--primary-solid);
   color: var(--primary-solid);
+}
+
+@media screen and (width > 900px) {
+  .filter__price--responsive {
+    display: none;
+  }
+
+  .navbar--responsive {
+    display: none;
+  }
+
+  .footer__copyright--responsive {
+    display: none;
+  }
+}
+
+@media screen and (width < 900px) {
+  /*FILTROS*/
+  .filters__box {
+    font-size: 70%;
+  }
+
+  input,
+  select {
+    max-width: 75%;
+  }
+
+  .filter__price {
+    display: none;
+  }
+
+  .filters__title--responsive {
+    font-size: 2.4em;
+    font-weight: 600;
+  }
+
+  .filter__price--responsive div {
+    margin-top: var(--spacing-8);
+    margin-bottom: var(--spacing-12);
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: space-between;
+  }
+
+  .filter__price--responsive label {
+    font-size: var(--font-small);
+    font-weight: 500;
+  }
+
+  .filter__price--responsive input {
+    width: 35%;
+    text-align: center;
+    border-radius: 6px;
+    font-size: 1.5em;
+    border: 2px solid var(--dark-solid);
+    padding: 4px var(--spacing-8);
+    height: 2em;
+    width: 5em;
+  }
+
+  .filter__checkbox {
+    font-size: 75%;
+  }
+
+  .filter__checkbox div input {
+    height: auto;
+    width: auto;
+  }
+
+  /*SHOP CONTENT*/
+
+  .shop__content {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: var(--spacing-36);
+  }
+
+  .shop__items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: var(--spacing-16);
+  }
+
+  .shop__item {
+    flex: 1 1 clamp(250px, 30%, 30%);
+  }
+
+  .card-item span {
+    font-size: 1em;
+  }
+
+  /*SLIDER*/
+
+  .pagination {
+    display: flex;
+    justify-content: center;
+    gap: var(--spacing-8);
+  }
+
+  .pagination .pagination__link {
+    display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    border-radius: 4px;
+    padding: 0.6em 0.8em;
+    border: 2px solid var(--dark-300);
+    transition: background 0.2s ease-in-out, color 0.2s ease-in-out;
+  }
+
+  /*HEADER*/
+
+  .navbar {
+    display: none;
+  }
+
+  .navbar--responsive {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar__logo--responsive {
+    max-width: 200px;
+  }
+
+  .navbar__link--responsive {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+  }
+
+  .navbar__link--responsive:hover {
+    color: var(--primary-900);
+  }
+
+  .with-icon--responsive {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+  }
+
+  .with-submenu--responsive:hover .submenu--responsive {
+    display: block;
+  }
+
+  .submenu--responsive {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    z-index: 3; /* No sé por qué, pero es la solución que encontré para que quede arriba del banner */
+  }
+  .submenu__link--responsive {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background 0.3s ease-in-out;
+  }
+
+  .submenu__link--responsive:hover {
+    background-color: var(--primary-900);
+  }
+
+  .submenu__link__shop--responsive {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-xsmall);
+    transition: background 0.3s ease-in-out;
+  }
+
+  .submenu__link__shop--responsive:hover {
+    background-color: var(--primary-900);
+  }
+
+  /*FOOTER*/
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .navbar__link--responsive {
+    font-size: var(--font-xsmall);
+  }
+
+  .footer__copyright--responsive {
+    font-size: var(--font-xsmall);
+    text-align: center;
+    padding-top: var(--spacing-28);
+  }
+
+  .picture__footer--responsive {
+    max-width: 100px;
+  }
 }

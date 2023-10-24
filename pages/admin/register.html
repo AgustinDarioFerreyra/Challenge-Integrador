@@ -32,6 +32,29 @@
           </li>
         </ul>
       </nav>
+
+      <nav class="navbar--responsive container">
+        <picture class="navbar__logo--responsive">
+                    <a href="../../index.html">
+                        <img src="../../img/branding/logo_light_horizontal.svg" alt="Isologotipo de la Marca FunkoShop">
+                    </a>
+                </picture>
+        <div class="navbar__item with-submenu--responsive">
+                        <a class="navbar__link--responsive with-icon--responsive"><iconify-icon icon="ion:menu"></iconify-icon>Menú</a>
+                        <ul class="submenu--responsive">
+                            <li class="submenu__item--responsive">
+                                <a href="../shop/shop.html" class="submenu__link--responsive">VER TIENDA</a>
+                                
+                            </li>
+                            <li class="submenu__item--responsive">
+                                <a href="" class="submenu__link--responsive">ADMIN</a>
+                            </li>
+                            <li class="submenu__item--responsive">
+                                <a href="../admin/login.html" class="submenu__link--responsive">SALIR</a>
+                            </li>
+                            
+                        </ul>
+                      </div></nav>
     </header>
 
 
@@ -42,7 +65,7 @@
         <p class="register__text">
           Completa el formulario para ser parte del mundo de los Funkos
         </p>
-        <form class="register__form container" action="index.js" method="GET">
+        <div class="register__data"><form class="register__form container" action="index.js" method="GET">
           <label class="register__label" for="user__name">Nombre:</label>
           <input
             class="register__input"
@@ -81,7 +104,7 @@
             id="repeat__password"
             placeholder="●●●●●●●●●●"
             
-          />
+          /></div>
           </article>
 
           <article class="terminos__section container">
@@ -121,6 +144,29 @@
       </nav>
 
       <p class="footer__copyright">All rights reserved 2023 - FunkoShop &copy;</p>
+
+      <nav class="navbar--responsive container">
+        <ul class="navbar__item--responsive">
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="./shop.html">SHOP</a>
+          </li>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="../admin/register.html">REGISTRARSE</a>
+          </li>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="../admin/login.html">INGRESAR</a>
+          </li>
+          <li class="navbar__item--responsive">
+            <a class="navbar__link--responsive" href="./contact.html">CONTACTO</a>
+          </li>
+        </ul>
+        <picture>
+          <img class="picture__footer--responsive" src="../../img/branding/isotype.svg" alt="Isotipo de la marca FunkoPop" />
+        </picture>
+      </nav>
+      <p class="footer__copyright--responsive">All rights reserved 2023 - FunkoShop &copy;</p>
+
+
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 

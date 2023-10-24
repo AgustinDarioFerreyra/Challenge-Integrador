@@ -57,10 +57,10 @@
                     </a>
                 </picture>
         <div class="navbar__item with-submenu--responsive">
-                        <a class="navbar__link--responsive with-icon--responsive" href="./pages/shop/shop.html"><iconify-icon icon="ion:menu"></iconify-icon>Menú</a>
+                        <a class="navbar__link--responsive with-icon--responsive"><iconify-icon icon="ion:menu"></iconify-icon>Menú</a>
                         <ul class="submenu--responsive">
                             <li class="submenu__item--responsive">
-                                <a href="" class="submenu__link--responsive">SHOP</a>
+                                <a href="../shop/shop.html" class="submenu__link--responsive">SHOP</a>
                                 <li class="submenu__link__shop--responsive"><a href="">- Remeras</a></li>
                                 <li class="submenu__link__shop--responsive"><a href="">- Funkos</a></li>
                                 <li class="submenu__link__shop--responsive"><a href="">- Llaveros</a></li>
@@ -69,7 +69,7 @@
                                 <a href="" class="submenu__link--responsive">CONTACTO</a>
                             </li>
                             <li class="submenu__item--responsive">
-                                <a href="" class="submenu__link--responsive">LOGIN</a>
+                                <a href="../admin/login.html" class="submenu__link--responsive">LOGIN</a>
                             </li>
                             <li class="submenu__item--responsive">
                                 <a href="" class="submenu__link--responsive">CARRITO</a>
@@ -174,8 +174,65 @@
 
     </aside>
 
-    
+<div class="filters__box--responsive">
+    <div class="filter__search--responsive">
+    <label class="filters__title--responsive" for="search">BUSCAR</label>
+    <form class="search__aside--form--responsive" action="index.js" method="GET">
+        <input
+          type="search"
+          name="search"
+          id="search"
+          placeholder="Ítem o categoría"
+        /></div>
 
+        <div class="filter__order--responsive">
+        <label class="filters__title--responsive">ORDENAR POR</label>
+        <select class="orderby__select--responsive" name="orderby" id="orderby">
+        <option value="az">A-Z</option>
+        <option value="za">Z-A</option>
+        <option value="desc">Mayor precio</option>
+        <option value="asc">Menor precio</option>
+      </select></div>
+      
+
+      
+      <div class="filter__price--responsive">
+        <span class="filters__title--responsive">PRECIO</span>
+
+        <label class="price__label--min--responsive" for="price__min--responsive">MIN</label>
+        <input
+          class="price__input--min--responsive"
+          type="price__min--responsive"
+          name="price__min--responsive"
+          id="price__min--responsive"
+          placeholder="0"
+        />
+
+        
+      
+      <label class="price__label--max--responsive" for="price__max--responsive">&nbsp- MAX</label>
+        <input
+          class="price__input--max--responsive"
+          type="price__max--responsive"
+          name="price__max--responsive"
+          id="price__max--responsive"
+          placeholder="0"
+        />
+      
+      </div>
+
+    <div class="filter__checkbox--responsive">
+      <span class="filters__title--responsive">FILTRAR</span>
+  <div><input type="checkbox" name="filter" id="new" value="new">
+      <label for="new">NUEVOS</label></div>
+      <div><input type="checkbox" name="filter" id="offers" value="offers">
+      <label for="offers">OFERTAS</label></div>
+      <div><input type="checkbox" name="filter" id="special__edition" value="special__edition">
+      <label for="special__edition">EDICIÓN ESPECIAL</label></div>
+      <div><input type="checkbox" name="filter" id="favs" value="favs"><label for="favs">FAVORITOS</label></div>
+    
+    </div></div>
+    
       <section class="shop__content">
         <ul class="shop__items">
           <li class="shop__item">
@@ -411,16 +468,7 @@
                 <a class="pagination__link" href="#" >5</a>
                 <a class="pagination__link" href="#" >></a>
             </div></section>
-
           
-
-
-
-   
-    
-
-
-
     </main>
 
     <!-- FINALIZA MAIN -->

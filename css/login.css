@@ -1,0 +1,226 @@
+@import url("./index.css");
+
+::placeholder {
+  opacity: 0.5;
+}
+
+#login {
+  margin: var(--spacing-68) auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  gap: var(--spacing-36);
+}
+
+.login__body {
+  padding-top: var(--spacing-28);
+}
+
+.login__title {
+  font-size: var(--font-jumbo);
+  font-family: var(--alternative-font);
+  align-items: center;
+  align-content: center;
+  text-align: center;
+  padding: var(--spacing-12);
+  font-weight: 600;
+}
+
+.login__label {
+  font-family: var(--alternative-font);
+  color: var(--dark-solid);
+  font-weight: 500;
+  font-size: var(--font-medium);
+}
+
+.login__input {
+  border-top: 0;
+  border-right: 0;
+  border-left: 0;
+  border-bottom: 2px solid var(--primary-solid);
+  outline: none;
+  width: 150px;
+}
+
+.login__input--dot {
+  letter-spacing: 0.25em;
+  font-size: medium;
+}
+
+.terminos__check--label {
+  font-family: var(--base-font);
+  font-size: var(--font-xsmall);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.terminos__label {
+  margin-left: 10px;
+}
+
+.login__form {
+  display: grid;
+  max-width: 100px;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-24);
+  padding: var(--spacing-20);
+}
+
+.login__div {
+  display: flex;
+  justify-content: center;
+}
+
+.recordar__section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  padding: var(--spacing-12);
+  width: 250px;
+}
+
+.button__login {
+  background-color: var(--primary-900);
+  color: var(--light-font-solid);
+  font-size: var(--font-xsmall);
+  border: none;
+  padding: var(--spacing-8) var(--spacing-20);
+  width: fit-content;
+  transition: background 0.1s ease-in-out;
+}
+
+.button__login:hover {
+  background-color: var(--dark-900);
+  color: var(--light-font-solid);
+}
+
+.reset__password {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  width: 150px;
+  padding: var(--spacing-8);
+}
+
+#reset__password--link {
+  color: #1d84b5;
+  font-style: var(--base-font);
+  font-size: 1.2em;
+}
+
+.footer {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+}
+
+.footer__register {
+  background-color: var(--dark-bg-solid);
+  padding: var(--spacing-68);
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+@media screen and (width >= 768px) {
+  .navbar--responsive {
+    display: none;
+  }
+
+  .footer__copyright--responsive {
+    display: none;
+  }
+}
+
+@media screen and (width <= 768px) {
+  .navbar {
+    display: none;
+  }
+
+  .navbar--responsive {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .navbar__logo--responsive {
+    max-width: 200px;
+  }
+
+  .navbar__link--responsive {
+    font-size: var(--font-medium);
+    padding: var(--spacing-8) var(--spacing-16);
+    display: inline-block;
+    transition: background 0.3s ease-in-out;
+    position: relative;
+  }
+
+  .navbar__link--responsive:hover {
+    color: var(--primary-900);
+  }
+
+  .with-icon--responsive {
+    display: flex;
+    align-items: center;
+    gap: var(--spacing-8);
+  }
+
+  .with-submenu--responsive:hover .submenu--responsive {
+    display: block;
+  }
+
+  .submenu--responsive {
+    display: none;
+    width: 300px;
+    position: absolute;
+    background-color: var(--dark-bg-solid);
+    z-index: 3;
+  }
+  .submenu__link--responsive {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-medium);
+    transition: background 0.3s ease-in-out;
+  }
+
+  .submenu__link--responsive:hover {
+    background-color: var(--primary-900);
+  }
+
+  .submenu__link__shop--responsive {
+    display: block;
+    padding: var(--spacing-8) var(--spacing-16);
+    font-size: var(--font-xsmall);
+    transition: background 0.3s ease-in-out;
+  }
+
+  .submenu__link__shop--responsive:hover {
+    background-color: var(--primary-900);
+  }
+
+  .footer__copyright {
+    display: none;
+  }
+
+  .navbar--responsive {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .navbar__link--responsive {
+    font-size: var(--font-xsmall);
+  }
+
+  .footer__copyright--responsive {
+    font-size: var(--font-xsmall);
+    text-align: center;
+    padding-top: var(--spacing-28);
+  }
+
+  .picture__footer--responsive {
+    max-width: 100px;
+  }
+}

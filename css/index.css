@@ -72,7 +72,8 @@ footer {
     color: var(--light-font-solid);
 }
 
-ul, ol {
+ul,
+ol {
     list-style-type: none;
 }
 
@@ -138,7 +139,8 @@ header {
     width: 300px;
     position: absolute;
     background-color: var(--dark-bg-solid);
-    z-index: 3; /* No sé por qué, pero es la solución que encontré para que quede arriba del banner */
+    z-index: 3;
+    /* No sé por qué, pero es la solución que encontré para que quede arriba del banner */
 }
 
 .submenu__link {
@@ -353,7 +355,19 @@ header {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
+}
+
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--spacing-36);
+    margin: var(--spacing-68) auto;
+    max-width: 1200px;
+    padding: var(--spacing-36);
+    justify-items: center;
+    align-items: center;
 }

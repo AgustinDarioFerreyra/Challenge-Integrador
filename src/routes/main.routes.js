@@ -1,9 +1,12 @@
 const express = require('express');
 const router = express.Router();
 
-router.get('/', (req, res) => res.send('Esta es la vista de Home'));
-router.get('/contact', (req, res) => res.send('Esta es la vista de Contact'));
-router.get('/about', (req, res) => res.send('Esta es la vista de About'));
-router.get('/faqs', (req, res) => res.send('Esta es la vista de Preguntas Frecuentes'));
+const controller = require('../controllers/main.controller');
+
+router.get('/', controller.home);
+router.get('/home', controller.home);
+router.get('/contact', controller.contact);
+router.get('/about', controller.about);
+router.get('/faqs', controller.faqs);
 
 module.exports = router;

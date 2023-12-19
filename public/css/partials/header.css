@@ -30,7 +30,11 @@ header {
 }
 
 .navbar__link:hover {
-    color: var(--primary-900);
+    background-color: var(--primary-900);
+}
+
+.navbar__link iconify-icon {
+    color: white;
 }
 
 .with-icon {

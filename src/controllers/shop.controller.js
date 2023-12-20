@@ -1,4 +1,5 @@
-const data = [
+const { getAll, getOne } = require('../models/product.model');
+const json = [
     {
         product_id: 1,
         licence_name: "Pokemon",
@@ -110,17 +111,31 @@ const data = [
 ];
 
 module.exports = {
-    shop: (req, res) => {
+    shop: async (req, res) => {
+
+        const data = await getAll();
+
+        // if (data.error) {
+        //     res.render('shop/shop', {
+        //         title: 'Tienda',
+        //         error: data.message
+        //     });
+        // } else {
+        //     res.render('shop/shop', {
+        //         title: 'Tienda',
+        //         data
+        //     });
+        // }
         res.render('shop/shop', {
             title: 'Tienda',
             data
         });
     },
-    item: (req, res) => {
+
+    item: async (req, res) => {
         const itemId = req.params.id;
 
-        const item = data.find(item => item.product_id == itemId);
-
+        const [item] = await getOne(itemId);
         res.render('shop/item', {
             title: 'Item',
             item

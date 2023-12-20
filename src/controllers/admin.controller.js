@@ -1,7 +1,13 @@
+const { getAll, getOne } = require('../models/product.model');
+
 module.exports = {
-    admin: (req, res) => {
+    admin: async (req, res) => {
+
+        const data = await getAll();
+
         res.render('admin/admin', {
             title: 'Admin',
+            data
         });
     },
     createView: (req, res) => {
@@ -12,9 +18,13 @@ module.exports = {
     createItem: (req, res) => {
         (req, res) => res.send('Esta es la ruta para agregar un nuevo item')
     },
-    editView: (req, res) => {
+    editView: async (req, res) => {
+
+        const { id } = req.params;
+        const [product] = await getOne(id);
         res.render('admin/edit', {
             title: 'Editar Item',
+            product
         });
     },
     editItem: (req, res) => {
